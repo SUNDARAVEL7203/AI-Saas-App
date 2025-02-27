@@ -16,7 +16,7 @@ app.use(cors())
 
 
 //API Routes
-app.get('/', (req,res) => res.send("API Working"))
+app.get('/', (req,res) => res.json({message: "Welcome"}))
 
 app.listen(PORT, () => {
     console.log(`Server is running on ${PORT}`)
